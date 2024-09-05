@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit
 /** FlutterInternetSpeedTestPlugin */
 class FlutterInternetSpeedTestPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     private val defaultFileSizeInBytes: Int = 10 * 1024 * 1024 //10 MB
-    private val defaultTestTimeoutInMillis: Int = TimeUnit.SECONDS.toMillis(20).toInt()
+    private val defaultTestTimeoutInMillis: Int = TimeUnit.SECONDS.toMillis(5).toInt()
     private val defaultResponseDelayInMillis: Int = TimeUnit.MILLISECONDS.toMillis(500).toInt()
 
     private var result: Result? = null
